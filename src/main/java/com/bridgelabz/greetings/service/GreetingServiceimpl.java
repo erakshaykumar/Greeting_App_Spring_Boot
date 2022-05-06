@@ -39,5 +39,11 @@ public class GreetingServiceimpl implements GreetingService {
         return greeting;
     }
 
+    @Override
+    public List<Greeting> deleteGreetingById(Long id) {
+        greetingRepository.deleteById(id);
+        return greetingRepository.findAll();
+    }
+
 
 }
