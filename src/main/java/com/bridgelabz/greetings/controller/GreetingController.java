@@ -41,4 +41,9 @@ public class GreetingController {
         return greetingService.getAll();
     }
 
+    @PutMapping("/edit/{id}")
+    public Greeting editGreetingById(@PathVariable long id, @RequestParam String name){
+        return greetingService.editGreetingById(id, name);
+    }
+
 }
