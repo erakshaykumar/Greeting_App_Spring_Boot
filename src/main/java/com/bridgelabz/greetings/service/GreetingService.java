@@ -7,4 +7,7 @@ public interface GreetingService {
 
     Greeting addGreeting(User user);
 
+    Greeting getGreetingById(Long id);
+
+
 }

@@ -28,4 +28,9 @@ public class GreetingController {
         return greetingService.addGreeting(user);
     }
 
+    @GetMapping("/path/{id}")
+    public Greeting getGreetingById(@PathVariable Long id){
+        return greetingService.getGreetingById(id);
+    }
+
 }
